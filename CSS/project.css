@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #4b4b4b; 
+    color: #cac9c9; /* Dark Brown */
+}
+
+.header {
+    background-color: #AA7D49; /* Copper */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #FFD59D; /* Mustard */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.serviceBox{
+    border-radius: 10px;
+    border-color: #AA7D49;
+    border-style: solid;
+    padding: 10px;
+}
