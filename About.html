@@ -7,17 +7,29 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>About</title>
 </head>
-<body style="text-align: center;">
+<header class="header">
+    <div class="logo">
+        <h1>My Portfolio</h1>
+    </div>
+    <nav class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Project</a>
+        <a href="Contact.html">Contact</a> 
+    </nav> 
+</header>
+
+<body>
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="AboutMe.png"/>
+                    <img src="/Personal-website/IMG-20240305-WA0008.jpg" alt=""/>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eos quis tempore neque quaerat assumenda vitae provident, saepe quod enim eum et, quibusdam explicabo laudantium architecto vero corrupti qui hic?</p>
-                    <div class="tab-titles">
+                    <div class="tab-titles" style="margin-left: 250px;">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links"  onclick="opentab('experience')">Experience</p>
@@ -31,8 +43,8 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2017</span><br>Qokolweni Senior Secondary School - Matric</li>
-                            <li><span>2018</span><br>Cape Peninsula University of Technology- <br>Higher Certificate in Information Technology</li>
+                            <li><span>Qokolweni Senior Secondary School</span><br> 2017- Matric</li>
+                            <li><span>Cape Peninsula University of Technology</span><br>2018- Higher Certificate in Information Technology</li>
                         </ul>
                 </div>
                     <div class="tab-contents" id="experience">
@@ -45,6 +57,20 @@
         </div>
     </div>
     </div>
+    
+    <footer>
+        <p><u>Interact with us and visit our socials:</u></p>
+
+        <br>
+        <span class="home-sci">
+            <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
+        </span>
+        <p>
+            &copy; 2024 SneakyKleen. All rights are reserved.
+        </p>
+    </footer>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -59,19 +85,5 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-
-    <footer>
-        <p><u>Interact with us and visit our socials:</u></p>
-
-        <br>
-        <span class="home-sci">
-            <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
-            <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
-            <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
-        </span>
-        <p>
-            &copy; 2024 SneakyKleen. All rights are reserved.
-        </p>
-    </footer>
 </body>
 </html>
