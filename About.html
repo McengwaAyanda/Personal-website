@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/about.css">
+    <link rel="stylesheet" href="/Personal-website/CSS/about.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>About</title>
 </head>
 <body style="text-align: center;">
-    <header class="header"><h1>My Portfolio</h1>
-        <nav>
-            <a href="Index.html">Home</a> |
-            <a href="About.html">About</a> |
-            <a href="Project.html">Project</a> |
-            <a href="Contact.html">Contact</a> 
-        </nav> 
-    </header>
-    <div>
-        <h1><u>About Us</u></h1>
-        <p>
-            Established in 2024, our company was born out of of passion for sneaker and dedication to keep them looking fresh. 
-            <br>What began the as a small operation has grown into a leading sneaker cleaning service, serving sneaker enthusiasts nationwide.
-            <br>Annually, we aim to clean thousands of sneakers, restoring them for their original glory.
-            <br>We ensure that each pair is treated with the utmost care and expertise.
-        </p>
-            
-        <h3>Vision</h3>
-        <p> Our vision is to become the go-to destination for sneakers care,<br>recognized for  our unparalleled quality,reliability, and customer satisfication.<br> We aim to elevate the sneakercleaning industry by setting new standards<br> of excelence and delivering exception results with every pair we clean.
-        
-        <h3>Mission</h3>
-        <p>Our mission is simple: To provide premium sneaker cleaning services that exceed our customers expectations.</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="AboutMe.png"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eos quis tempore neque quaerat assumenda vitae provident, saepe quod enim eum et, quibusdam explicabo laudantium architecto vero corrupti qui hic?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java<br>JavaScript<br>Scala<br>SQL</li>
+                            <li><span>Frameworks</span><br>React<br>Springboot<br>Bootscrap</li>
+                            <li><span>App Development</span><br>Designing App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>Qokolweni Senior Secondary School - Matric</li>
+                            <li><span>2018</span><br>Cape Peninsula University of Technology- <br>Higher Certificate in Information Technology</li>
+                        </ul>
+                </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MERN Stack </span><br>MERN stack web application</li>
+                            <li><span>Capstone project</span><br>Fullstack Java application</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
     <footer>
         <p><u>Interact with us and visit our socials:</u></p>

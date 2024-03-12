@@ -7,7 +7,8 @@
     background-color: #4b4b4b;
 }
 .body {
-    color: #cac9c9;
+    border: 2px solid #e4a022;
+    color: #e4a022;
     height: 100%;
     width: 100%;
 }
@@ -47,10 +48,11 @@
     height: 100%;
 }
 .container {
+    position: fixed;
     width: 98%;
-    height: 100%;
-    margin: 120px 15px;
-    padding: 100px;
+    height: 80%;
+    margin: 110px 15px;
+    padding: 50px;
     background-color: #4b4b4b;
     color: #e4a022;
     border: 2px solid #131212;
@@ -89,17 +91,14 @@ form {
     background-color: #131212;
   }
   
-
-
-
-
   .home-sci{
     position: absolute;
     bottom: 40px;
-    width: 150px;
-    margin-left: 50%;
-    display: flex;
-    justify-content: space-between;
+    width: 200px;
+    padding-inline: 20px;
+    margin-left: 45%;
+    display: inline-flex;
+    justify-content: space-evenly;
     text-align: center;
     
 }
@@ -114,13 +113,13 @@ form {
     border: 2px solid #e4a022;
     border-radius: 50%;
     font-size: 25px;
-    color: #cac9c9;
+    color: var(--main-color);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
 .home-sci a:hover{
-    color: #cac9c9;
+    color: var(--main-color);;
 }
 .home-sci a::before{
     content: '';

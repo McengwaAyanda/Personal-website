@@ -34,7 +34,7 @@ body {
     color: #e4a022;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 35px;
+    margin-left: 45px;
     text-align: left;
 }
 .navbar a:hover,
@@ -121,7 +121,7 @@ body {
     position: absolute;
     bottom: 40px;
     width: 160px;
-    margin-left: 50%;
+    margin-left: 40%;
     display: flex;
     justify-content: space-between;
     text-align: center;
