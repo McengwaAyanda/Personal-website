@@ -1,27 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900& display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
 body {
-    text-align: center;
     background-color: #4b4b4b; 
-    color: #cac9c9; /* Dark Brown */
+    color: #cac9c9;
 }
 
 .header {
-    background-color: #AA7D49; /* Copper */
-    padding: 20px;
-    margin-bottom: 20px;
+    position: fixed;
+    margin: 15px;
+    width: 98%;
+    padding: 10px 15px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    border: 2px solid black;
 }
-
-nav a {
-    color: #FFD59D; /* Mustard */
+.logo{
+    color: #e4a022;
+    border-radius: 100%;
+    font-size: 15px;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #e4a022;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 45px;
+    text-align: left;
+}
+.navbar a:hover,
+.navbar a.active{
+    background-color: #131212;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
 }
 
-nav a:hover {
-    text-decoration: underline;
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 160px;
+    margin-left: 40%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
 }
-.serviceBox{
-    border-radius: 10px;
-    border-color: #AA7D49;
-    border-style: solid;
-    padding: 10px;
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #e4a022;
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover{
+    color: var(--bg-color);
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: #131212;
+    z-index: -1;
+    transition: .4s;
+}
+.home-sci a:hover::before{
+    width: 100%;
 }
