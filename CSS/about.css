@@ -9,42 +9,42 @@ body {
     background-color: #4b4b4b; 
     color: #cac9c9;
 }
-
-.header {
-    position: fixed;
-    margin: 15px;
-    width: 98%;
-    padding: 10px 15px;
-    background: transparent;
+.navbar{
+    margin: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    z-index:100;
-    border: 2px solid black;
+    position: sticky;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    width: 99%;
 }
-.logo{
-    color: #e4a022;
-    border-radius: 100%;
-    font-size: 15px;
+.logo h1{
+    color:#e4a022;
+    font-size: 25px;
+}
+.navbar a{
+    list-style: none;
+    display: flex;
+}
+.navbar a{
+    display: block;
+    color: #131212;
     text-decoration: none;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
 }
-.navbar a {
-    font-size: 18px;
-    color: #e4a022;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 45px;
-    text-align: left;
+.navbar .menu li .active{
+    border-bottom: 4px solid #f3f4f6;
 }
-.navbar a:hover,
-.navbar a.active{
-    background-color: #131212;
-    border-radius: 2px;
-    width: 100%;
-    height: 100%;
+.navbar .menu li a i{
+    color: #f63e4e;
 }
-/*--------about------------*/
+.navbar .menu li a:hover{
+    border-bottom: 4px solid #f63e4e;
+}
 #about{
     padding: 40px 0;
     color: #ffffff;
@@ -98,13 +98,13 @@ body {
     width: 50%;
 }
 .tab-contents ul li{
-    list-style: none;
-    margin-right: 5%;
+    list-style: none; 
+    margin-left: 300px;  
 }
 .tab-contents ul li span{
     color: #e4a022;
     font-size: 24px;
-    margin-right: 0;
+    margin-left: 0;
 }
 .tab-contents{
     display: none;
