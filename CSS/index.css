@@ -48,6 +48,8 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+   
 }
 .home-content{
     max-width: 100%;
@@ -57,31 +59,50 @@ body {
     height: 70%;
     border: 2px solid #000000;
     background-color: #4b4b4b;
+
 }
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
     margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
     color: #e4a022;
     margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .home-content p{
     font-size: px;
     margin: 20px;
     width: 50%;
     margin: 20px;
-}
-.image{
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.home .home-content img{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    flex-direction: row-reverse;
+    float: right;
+    width: 40%;
+    height: 500px;
+    border-radius: 40%;
+    margin: 15px;
 }
 .home-content .btn-box{
     display: flex;
+    text-align: right;
     justify-content: space-between;
     width: 345px;
     height: 50px;
